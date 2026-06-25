@@ -1,22 +1,5 @@
 import { motion } from 'framer-motion';
 
-const FloatingGif = ({ src, delay }: { src: string; delay: number }) => (
-  <motion.img
-    src={src}
-    className="absolute w-20 h-20 opacity-60"
-    animate={{
-      y: [0, -20, 0],
-      x: [0, 10, 0],
-    }}
-    transition={{
-      duration: 3,
-      repeat: Infinity,
-      delay: delay,
-      ease: "easeInOut"
-    }}
-  />
-);
-
 export const SceneOne = ({ onOptionSelect }: { onOptionSelect: (option: string) => void }) => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center bg-indigo-50 p-6 relative overflow-hidden">
