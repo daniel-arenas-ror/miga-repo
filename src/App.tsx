@@ -35,8 +35,7 @@ function App() {
 
   const handleNextScene = () => {
     setCurrentScene((prev) => prev + 1);
-    console.log(`Escena ${currentScene}`)
-    //sendNotification(`Escena ${currentScene}`);
+    sendNotification(`Escena ${currentScene}`);
   }
 
   return (
