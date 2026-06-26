@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const content = [
-  { text: "Isa, solo quería hablarte", img: "/g_1.jpeg", anim: { y: [20, 0] } },
-  { text: "saber de ti 🥹", img: "/g_2.jpeg", anim: { scale: [0.8, 1] } },
-  { text: "de cómo te sientes", img: "/g_3.png", anim: { x: [-20, 0] } },
-  { text: "¿qué ha pasado con tu vida?", img: "/g_4.png", anim: { rotate: [-5, 0] } },
+  { text: "Isa, solo quería hablarte", img: `${import.meta.env.BASE_URL}g_1.jpeg`, anim: { y: [20, 0] } },
+  { text: "saber de ti 🥹", img: `${import.meta.env.BASE_URL}g_2.jpeg`, anim: { scale: [0.8, 1] } },
+  { text: "de cómo te sientes", img: `${import.meta.env.BASE_URL}g_3.png`, anim: { x: [-20, 0] } },
+  { text: "¿qué ha pasado con tu vida?", img: `${import.meta.env.BASE_URL}g_4.png`, anim: { rotate: [-5, 0] } },
 ];
 
 export const SceneFour = ({ onComplete }: { onComplete: () => void }) => {

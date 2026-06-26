@@ -33,7 +33,7 @@ export const SceneTwo = ({ onComplete }: { onComplete: () => void }) => {
     <div className="h-screen flex flex-col items-center justify-center bg-white p-6">
       {/* GIF saltarín */}
       <motion.img 
-        src="/lazy-cat.gif" 
+        src={`${import.meta.env.BASE_URL}lazy-cat.gif`}
         className="w-64 h-32 mb-10"
         animate={{ y: [0, -30, 0] }}
         transition={{ duration: 1.6, repeat: Infinity, ease: "easeOut" }}

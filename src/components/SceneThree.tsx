@@ -38,7 +38,7 @@ export const SceneThree = ({ onComplete }: { onComplete: () => void }) => {
       {(step === 4) && (
         <div className="h-screen flex flex-col items-center justify-center bg-white p-6">
           <motion.img 
-            src="/siri_2.png" 
+            src={`${import.meta.env.BASE_URL}/siri_2.png`}
             className="w-64 h-64 mb-10"
             animate={{ y: [0, -30, 0] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: "easeOut" }}
