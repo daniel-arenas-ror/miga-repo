@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const content = [
   { text: "a pesar de todo...", img: `${import.meta.env.BASE_URL}g_9.gif`, anim: { opacity: [0, 1] } },
   { text: "Extraño hablarte", img: `${import.meta.env.BASE_URL}g_10.png`, anim: { scale: [0.9, 1] } },
-  { text: "Extraño verte sonreír", img: `${import.meta.env.BASE_URL}g_11.png`, anim: { y: [10, 0] } },
+  { text: "Extraño verte sonreír", img: `${import.meta.env.BASE_URL}g_11.jpeg`, anim: { y: [10, 0] } },
   { text: "Extraño abrazarte", img: `${import.meta.env.BASE_URL}g_12.png`, anim: { scale: [1, 1.05, 1] } },
   { text: "Quiero saber si ya tomaste agüita", img: `${import.meta.env.BASE_URL}g_13.png`, anim: { rotate: [-2, 2, 0] } },
   { text: "siento que eres especial y no quiero solo desaparecer", img: `${import.meta.env.BASE_URL}g_14.png`, anim: { opacity: [0, 1] } },
