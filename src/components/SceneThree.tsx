@@ -5,7 +5,6 @@ const steps = [
   { text: "Tap para continuar", pos: "top-1/4" },
   { text: "Ahora presiona aquí", pos: "bottom-1/3" },
   { text: "Eso, sigue.... ahora presiona aquí", pos: "right-1/4" },
-  { text: "Tap siempre que quieras seguir", pos: "right-0 bottom-0" },
   { text: "me gusta que me hagas caso 🤣", pos: "left-1/3" }
 ];
 
@@ -35,7 +34,7 @@ export const SceneThree = ({ onComplete }: { onComplete: () => void }) => {
         </motion.button>
       </AnimatePresence>
 
-      {(step === 4) && (
+      {(step === 3) && (
         <div className="h-screen flex flex-col items-center justify-center bg-white p-6">
           <motion.img 
             src={`${import.meta.env.BASE_URL}/siri_2.png`}

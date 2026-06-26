@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const content = [
-  { text: "me prometí no volverte a escribir 😞", img: "/g_5.png", anim: { initial: { opacity: 0, y: 50 }, animate: { opacity: 1, y: 0 } } },
-  { text: "dándote un espacio a que respiraras", img: "/g_6.png", anim: { initial: { opacity: 0, scale: 0.5 }, animate: { opacity: 1, scale: 1 } } },
-  { text: "🤔 aunque .... (técnicamente no te estoy escribiendo 😅🤓)", img: "/g_7.png", anim: { initial: { opacity: 0, rotate: -15 }, animate: { opacity: 1, rotate: 0 } } },
-  { text: "siento que algo pasó, algo cambió y no sé qué fue 🥺", img: "/g_8.gif", anim: { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } } },
+  { text: "me prometí no volverte a escribir 😞", img: `${import.meta.env.BASE_URL}g_5.png`, anim: { initial: { opacity: 0, y: 50 }, animate: { opacity: 1, y: 0 } } },
+  { text: "dándote un espacio a que respiraras", img: `${import.meta.env.BASE_URL}g_6.png`, anim: { initial: { opacity: 0, scale: 0.5 }, animate: { opacity: 1, scale: 1 } } },
+  { text: "🤔 aunque .... (técnicamente no te estoy escribiendo 😅🤓)", img: `${import.meta.env.BASE_URL}g_7.png`, anim: { initial: { opacity: 0, rotate: -15 }, animate: { opacity: 1, rotate: 0 } } },
+  { text: "siento que algo pasó, algo cambió y no sé qué fue 🥺", img: `${import.meta.env.BASE_URL}g_8.gif`, anim: { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } } },
 ];
 
 export const SceneFive = ({ onComplete }: { onComplete: () => void }) => {
