@@ -6,7 +6,7 @@ export const SceneOne = ({ onOptionSelect }: { onOptionSelect: (option: string) 
       
       {/* GIF central superior */}
       <motion.img
-        src="/gato_1.gif"
+        src={`${import.meta.env.BASE_URL}gato_1.gif`}
         className="w-32 h-32 mb-6"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
@@ -22,7 +22,7 @@ export const SceneOne = ({ onOptionSelect }: { onOptionSelect: (option: string) 
 
       {/* GIF flotante inferior con el movimiento sugerido */}
       <motion.img
-        src="/isa_face.gif"
+        src={`${import.meta.env.BASE_URL}isa_face.gif`}
         className="w-24 h-24 mb-10"
         animate={{
           y: [0, -15, 0],

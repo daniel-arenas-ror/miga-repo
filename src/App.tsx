@@ -13,8 +13,8 @@ import './App.css'
 
 function App() {
   const [currentScene, setCurrentScene] = useState(1);
-  const [play, { stop }] = useSound('/step_2.mp3', { volume: 0.5 });
-  const [toda_ciudad_play] = useSound('/toda_esta_ciudad.mp3', { volume: 0.5 });
+  const [play, { stop }] = useSound(`${import.meta.env.BASE_URL}step_2.mp3`, { volume: 0.5 });
+  const [toda_ciudad_play] = useSound(`${import.meta.env.BASE_URL}toda_esta_ciudad.mp3`, { volume: 0.5 });
 
   const handleOptionSelect = (option: string) => {
     if (option === "Sí") {
